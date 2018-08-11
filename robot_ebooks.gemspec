@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/twitter_ebooks/version', __FILE__)
+require File.expand_path('../lib/robot_ebooks/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.required_ruby_version = '~> 2.1'
@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "twitter_ebooks"
+  gem.name          = "robot_ebooks"
   gem.require_paths = ["lib"]
   gem.version       = Ebooks::VERSION
 

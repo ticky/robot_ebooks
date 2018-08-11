@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
-require 'twitter_ebooks'
+require 'robot_ebooks'
 require 'ostruct'
 require 'fileutils'
 
@@ -74,7 +74,7 @@ STR
       f.write(template.gsub("{{RUBY_VERSION}}", RUBY_VERSION))
     end
 
-    log "New twitter_ebooks app created at #{reponame}"
+    log "New robot_ebooks app created at #{reponame}"
   end
 
   HELP.consume = <<-STR
@@ -329,11 +329,11 @@ STR
   HELP.version = <<-STR
     Usage: ebooks version
 
-    Shows you twitter_ebooks' version number.
+    Shows you robot_ebooks' version number.
   STR
 
   def self.version
-    require File.expand_path('../../lib/twitter_ebooks/version', __FILE__)
+    require File.expand_path('../../lib/robot_ebooks/version', __FILE__)
     log Ebooks::VERSION
   end
 

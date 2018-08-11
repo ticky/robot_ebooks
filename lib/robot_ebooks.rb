@@ -14,9 +14,9 @@ module Ebooks
   INTERIM = :interim
 end
 
-require 'twitter_ebooks/nlp'
-require 'twitter_ebooks/archive'
-require 'twitter_ebooks/sync'
-require 'twitter_ebooks/suffix'
-require 'twitter_ebooks/model'
-require 'twitter_ebooks/bot'
+require 'robot_ebooks/nlp'
+require 'robot_ebooks/archive'
+require 'robot_ebooks/sync'
+require 'robot_ebooks/suffix'
+require 'robot_ebooks/model'
+require 'robot_ebooks/bot'
