@@ -1,14 +1,13 @@
+# robot\_ebooks
 
-## Unmaintained
-
-The Twitter social environment is a bit different than it was when I originally wrote this, and Twitter has [deprecated the streaming API](https://developer.twitter.com/en/docs/accounts-and-users/subscribe-account-activity/api-reference/user-stream) on which the ebooks bots depend. I've moved on to other projects, but feel free to fork!
-
-# twitter\_ebooks
-
-[![Gem Version](https://badge.fury.io/rb/twitter_ebooks.svg)](http://badge.fury.io/rb/twitter_ebooks)
-[![Build Status](https://travis-ci.org/mispy/twitter_ebooks.svg)](https://travis-ci.org/mispy/twitter_ebooks)
+[![Gem Version](https://badge.fury.io/rb/robot_ebooks.svg)](http://badge.fury.io/rb/robot_ebooks)
+[![Build Status](https://travis-ci.org/ticky/robot_ebooks.svg)](https://travis-ci.org/ticky/robot_ebooks)
 
 A framework for building interactive twitterbots which respond to mentions/DMs. See [ebooks_example](https://github.com/mispy/ebooks_example) for a fully-fledged bot definition.
+
+## Experimental
+
+This fork of twitter_ebooks is experimenting with making the service-level communication generic so it's usable on more than just Twitter. I have no idea if it's going to get there yet!
 
 ## New in 3.0
 
@@ -19,7 +18,7 @@ A framework for building interactive twitterbots which respond to mentions/DMs. 
 - `ebooks console` starts a ruby interpreter with bots loaded (see Ebooks::Bot.all)
 - Replies are slightly rate-limited to prevent infinite bot convos
 - Non-participating users in a mention chain will be dropped after a few tweets
-- [API documentation](http://rdoc.info/github/mispy/twitter_ebooks) and tests
+- [API documentation](http://rdoc.info/github/ticky/robot_ebooks) and tests
 
 Note that 3.0 is not backwards compatible with 2.x, so upgrade carefully! In particular, **make sure to regenerate your models** since the storage format changed.
 
@@ -28,7 +27,7 @@ Note that 3.0 is not backwards compatible with 2.x, so upgrade carefully! In par
 Requires Ruby 2.1+. Ruby 2.3+ is recommended.
 
 ```bash
-gem install twitter_ebooks
+gem install robot_ebooks
 ```
 
 ## Setting up a bot
@@ -158,4 +157,4 @@ end
 
 ## Bot niceness
 
-twitter_ebooks will drop bystanders from mentions for you and avoid infinite bot conversations, but it won't prevent you from doing a lot of other spammy things. Make sure your bot is a good and polite citizen!
+robot_ebooks will drop bystanders from mentions for you and avoid infinite bot conversations, but it won't prevent you from doing a lot of other spammy things. Make sure your bot is a good and polite citizen!
